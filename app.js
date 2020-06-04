@@ -5,7 +5,7 @@ $(document).ready(function () {
     console.log("I did it! I linked jQuery and this js file properly!");
   }
 
-  const $name = $("h1");
+  const $name = $("#name");
   const $prompt = $("p");
   const $entry = $(".entry");
   $name.click(function () {
