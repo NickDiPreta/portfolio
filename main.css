@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+    --soft-pink: #EDC7B7;
+    --lightest-pink: #EEE2DC;
+    --warm-violet: #BAB2B5;
+    --dark-imperial-blue: #123C69;
+    --ruby: #AC3B61;
+  }
+html {
+    height: 100%;
+    background: var(--lightest-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    display: none;
+}
+.entry{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    display: none;
+}
+#name{
+  line-height: 50px;
+}
+#welcome{
+  display:none;
+}
