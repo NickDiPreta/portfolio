@@ -9,8 +9,7 @@ $(document).ready(function () {
   const $prompt = $("p");
   const $entry = $(".entry");
   const $start = $("#start")
-  const $fname = $("#fname")
-  let nameInput = "Mr. Nick"
+
   // $name.hover(function(){
   //   $(this).css("background-color", "green");
   //   }, function(){
@@ -31,8 +30,7 @@ $(document).ready(function () {
 
   $(".input").keypress(function (e) {
     if (e.which == 13) {
-      nameInput = $("form#login").val();
-      console.log(nameInput);
+
       $("form#login").submit();
       
       return false; //<---- Add this line
@@ -40,7 +38,7 @@ $(document).ready(function () {
   });
 
 
-  $("#welcome").text(`Welcome ${nameInput}`);
+  
   $("#welcome").fadeIn(3000);
 
 
