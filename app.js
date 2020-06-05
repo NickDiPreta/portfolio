@@ -31,7 +31,8 @@ $(document).ready(function () {
 
   $(".input").keypress(function (e) {
     if (e.which == 13) {
-      var nameInput = $("#fname").val();
+      nameInput = $("form#login").val();
+      console.log(nameInput);
       $("form#login").submit();
       
       return false; //<---- Add this line
