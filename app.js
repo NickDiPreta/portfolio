@@ -30,14 +30,14 @@ $(document).ready(function () {
 
   $(".input").keypress(function (e) {
     if (e.which == 13) {
-      var nameInput = $("#myInput").val();
+      var nameInput = $("#fname").val();
       $("form#login").submit();
       
       return false; //<---- Add this line
     }
   });
 
-  let welcomeText = $fname.val();
+
   $("#welcome").text(`Welcome ${nameInput}`);
   $("#welcome").fadeIn(3000);
 
