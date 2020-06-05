@@ -6,12 +6,16 @@
   --dark-imperial-blue: #123c69;
   --ruby: #ac3b61;
 }
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
 html {
   height: 100%;
   background: var(--lightest-pink);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Press Start 2P";
 }
 
 h1 {
@@ -33,4 +37,24 @@ p {
 }
 #welcome {
   display: none;
+}
+#fname{
+  font-size: 20px;
+  width: fit-content;
+  background-color: transparent;
+  color: limegreen;
+  line-height: 30px;
+  height: 30px;
+  outline:none;
+  border: none;
+  background-color:black;
+  font-family:"Press Start 2P";
+  margin-top:20px;
+  padding:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#logbook{
+  padding-top: 20px;
 }
