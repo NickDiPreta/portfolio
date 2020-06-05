@@ -10,6 +10,7 @@ $(document).ready(function () {
   const $entry = $(".entry");
   const $start = $("#start")
   const $fname = $("#fname")
+  let nameInput = "Mr. Nick"
   // $name.hover(function(){
   //   $(this).css("background-color", "green");
   //   }, function(){
