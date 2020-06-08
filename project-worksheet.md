@@ -12,7 +12,7 @@ Nick DiPreta Timeline
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete except priority matrix
-|Day 2| API call and full form integration with redirect to homepage. Homepage layout complete.| Incomplete
+|Day 3| API call and full form integration with redirect to homepage. Homepage layout complete.| Incomplete
 |Day 3| All individual pages complete.| Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
