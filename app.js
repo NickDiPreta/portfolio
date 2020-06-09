@@ -5,6 +5,8 @@ $(document).ready(function () {
     console.log("I did it! I linked jQuery and this js file properly!");
   }
 
+
+
   const $name = $("#name");
   const $prompt = $("p");
   const $entry = $(".entry");
@@ -19,18 +21,17 @@ $(document).ready(function () {
   
   $(window).keypress(function (e) {
     if (e.which == 32) {
-    $name.removeClass("blink");
+    $start.remove();
     $name.animate({ height: "100px", opacity: "0.4" });
     $prompt.fadeIn(1000);
     $entry.fadeIn(1000);
-    $start.css("display","none");
     $( "#fname" ).focus();
     }
   });
 
   $(".input").keypress(function (e) {
     if (e.which == 13) {
-
+      consolee.log("form#login".value).
       $("form#login").submit();
       
       return false; //<---- Add this line
@@ -38,8 +39,9 @@ $(document).ready(function () {
   });
 
 
-  
+
   $("#welcome").fadeIn(3000);
+  $('#welcome').fadeOut(1000);
 
 
   function blink_text() {

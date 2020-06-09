@@ -21,16 +21,21 @@ html {
 h1 {
   font-family: "Press Start 2P", cursive;
   text-align: center;
+  margin-top: 50vh;
 }
 p {
   text-align: center;
   font-family: "Press Start 2P";
   display: none;
 }
+
 .entry {
   text-align: center;
   font-family: "Press Start 2P";
   display: none;
+}
+body{
+  height: 100%;
 }
 #name {
   line-height: 50px;
@@ -58,3 +63,31 @@ p {
 #logbook{
   padding-top: 20px;
 }
+nav{
+  text-align: center;
+  padding-top: 25vh;
+  height: 100vh;
+}
+
+.divisions{
+  height:100vh;
+  width: 100%;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  padding-bottom: 2em;
+}
+
+
