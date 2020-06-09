@@ -12,12 +12,6 @@ $(document).ready(function () {
   const $entry = $(".entry");
   const $start = $("#start")
 
-  // $name.hover(function(){
-  //   $(this).css("background-color", "green");
-  //   }, function(){
-  //   $(this).css("background-color", "#eee2dc");
-  // });
-
   
   $(window).keypress(function (e) {
     if (e.which == 32) {
@@ -34,15 +28,14 @@ $(document).ready(function () {
       $name.animate({ height: "100px", opacity: "0.4" });
       $prompt.fadeIn(1000);
       $entry.fadeIn(1000);
+      console.log("#fname".value)
       $( "#fname" ).focus();
       }
   );
 
   $(".input").keypress(function (e) {
-    if (e.which == 13) {
-      consolee.log("form#login".value).
+    if (e.which == 13 && $('#fname')[0].value.length > 4) {
       $("form#login").submit();
-      
       return false; //<---- Add this line
     }
   });
@@ -60,8 +53,6 @@ $(document).ready(function () {
 setInterval(blink_text, 2000);
 
 
-
-
 var input = document.querySelector('input'); // get the input element
 input.addEventListener('input', resizeInput); // bind the "resizeInput" callback on "input" event
 resizeInput.call(input); // immediately call the function
@@ -70,7 +61,11 @@ function resizeInput() {
   this.style.width = this.value.length + "ch";
 }
 
-
+// $('#port-link').on(click,()=>{
+//   $('#portfolio').scrollIntoView({ 
+//     behavior: 'smooth' 
+//   })
+// })
 
 
 });

@@ -16,6 +16,7 @@ html {
   justify-content: center;
   align-items: center;
   font-family: "Press Start 2P";
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -39,6 +40,7 @@ p {
 }
 body{
   height: 100%;
+  margin: auto;
 }
 #name {
   line-height: 50px;
@@ -74,8 +76,11 @@ nav{
 
 .divisions{
   height:100vh;
-  width: 100%;
+  width: 80vw;
   text-align: center;
+  background-color: red;
+  padding-top: 50px;
+  margin-bottom: 10px;
 }
 a{
   text-decoration: none;
@@ -92,5 +97,6 @@ ul{
 li{
   padding-bottom: 2em;
 }
-
-
+#homename{
+  padding-bottom: 50px;
+}

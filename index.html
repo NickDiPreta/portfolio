@@ -24,7 +24,8 @@
     >
       <label id="name" for="name">Enter Name</label><br />
 
-      <input type="text" id="fname" name="fname" /><br />
+      <input type="text" id="fname" name="fname" pattern='(?=.*[a-z])(?=.*[A-Z]).{5,}' 
+      oninvalid="this.setCustomValidity('Enter Name Here (One uppercase and one lowercase, min length 5 chars.')"  /><br />
     </form>
     <p id="logbook">Press return when ready.</p>
     <script src="app.js" charset="utf-8"></script>
