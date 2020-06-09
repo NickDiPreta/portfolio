@@ -10,10 +10,10 @@ Nick DiPreta Timeline
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 2| API call and full form integration with redirect to homepage. Homepage layout complete.
-|Day 3| All individual pages complete.
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete except priority matrix
+|Day 3| API call and full form integration with redirect to homepage. Homepage layout complete.| Incomplete
+|Day 3| All individual pages complete.| Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 4| MVP & Bug Fixes | Incomplete
 |Day 5| Final Touches | Incomplete
@@ -21,27 +21,6 @@ Nick DiPreta Timeline
 
 
 ## Project Description
-
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
-
-I want to design a portfolio website that has a retro video game / computer terminal theme to it. Here is a link to the langing page that [I have already started](https://nickdipreta.github.io/portfolio/). Once the user enters their name on the landing page, I will direct them to the homepage, where they will have access to my portfolio.
-
-## Google Sheet
-
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
-
-## Wireframes
-
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
-
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
-
 
 
 - [DESKTOP WIREFRAME](https://s3.amazonaws.com/assets.mockflow.com/app/wireframepro/company/C06347e262ae94d0e865ba76b829ea4ab/projects/M9b82fde35f69fa5005cfb1f8b9a01b891591620460422/pages/0d7add27f3c941808853e10d92e7925e/image/0d7add27f3c941808853e10d92e7925e.png)
