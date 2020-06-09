@@ -43,7 +43,7 @@ $(document).ready(function () {
 
 
   $("#welcome").fadeIn(3000);
-  $('#welcome').fadeOut(1000);
+  $('#welcome').fadeOut(2000);
 
 
   function blink_text() {
@@ -60,12 +60,5 @@ resizeInput.call(input); // immediately call the function
 function resizeInput() {
   this.style.width = this.value.length + "ch";
 }
-
-// $('#port-link').on(click,()=>{
-//   $('#portfolio').scrollIntoView({ 
-//     behavior: 'smooth' 
-//   })
-// })
-
 
 });
