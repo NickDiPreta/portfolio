@@ -29,6 +29,15 @@ $(document).ready(function () {
     }
   });
 
+  $( "#start" ).click(function(e) {
+      $start.remove();
+      $name.animate({ height: "100px", opacity: "0.4" });
+      $prompt.fadeIn(1000);
+      $entry.fadeIn(1000);
+      $( "#fname" ).focus();
+      }
+  );
+
   $(".input").keypress(function (e) {
     if (e.which == 13) {
       consolee.log("form#login".value).
