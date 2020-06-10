@@ -10,7 +10,9 @@
   <body>
     <h1 id="name">Nick <br />DiPreta</h1>
     <div id="start" class="blink">
-      Press spacebar to <br />start.<br /><br /><span>Tap here for mobile.</span>
+      Press spacebar to <br />start.<br /><br /><span
+        >Tap here for mobile.</span
+      >
     </div>
     <form
       action="https://formspree.io/mzbjrjgq"
@@ -20,10 +22,11 @@
     >
       <label id="name" for="name">Enter Name</label><br />
 
-      <input type="text" id="fname" name="fname" pattern='(?=.*[a-z])(?=.*[A-Z]).{5,}' 
-      oninvalid="this.setCustomValidity('Enter Name Here (One uppercase and one lowercase, min length 5 chars.')"  /><br />
+      <input type="text" id="fname" name="fname" pattern='(?=.*[a-z])(?=.*[A-Z]).{3,}' 
+      title = "8 or more characters with at least 1 uppercase and 1 lowercase letter."  /><br />
     </form>
     <p id="logbook">Press return when ready.</p>
+    <p id="my-form-status"></p>
     <script src="app.js" charset="utf-8"></script>
   </body>
 </html>

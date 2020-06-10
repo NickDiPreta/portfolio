@@ -4,7 +4,7 @@ $(document).ready(function () {
   } else {
     console.log("I did it! I linked jQuery and this js file properly!");
   }
-  
+
   // this is the shared url
   const sheetUrl =
     "https://docs.google.com/spreadsheets/d/1IW-g-YoQ4bCoRtFq6qnDhaMBbY8Xdk_HB7TH4a4twI8/edit?usp=sharing";
@@ -33,11 +33,14 @@ $(document).ready(function () {
     .catch((err) => console.log("err", err));
 
   function app(projectsArr) {
-    for (let x of projectsArr) {
-      $("#portfolio-container").append(`<img class = "child" src = "${x.image}">`);
+    for (let x in projectsArr) {
+      console.log(x);
+      $("#portfolio-container").append(`
+        <a href="${projectsArr[x].image}"
+        data-lightbox="image-${x}"> <img class ="child" src="${projectsArr[x].image}" alt = "Project item image"></a>
+        `);
     }
   }
-
   console.log("running after ajax");
   const $name = $("#name");
   const $prompt = $("p");
@@ -63,12 +66,43 @@ $(document).ready(function () {
     $("#fname").focus();
   });
 
-  $(".input").keypress(function (e) {
-    if (e.which == 13 && $("#fname")[0].value.length > 4) {
-      $("form#login").submit();
-      return false; //<---- Add this line
-    }
+  var form = document.getElementById("login");
+
+  var status = document.getElementById("my-form-status");
+
+  function success() {
+    form.reset();
+    status.innerHTML = "Thanks!";
+  }
+
+  function error() {
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
   });
+
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
 
   $("#welcome").fadeIn(3000);
   $("#welcome").fadeOut(2000);
@@ -79,6 +113,8 @@ $(document).ready(function () {
   }
   setInterval(blink_text, 2000);
 
+  //create if statement for logic of when to run this
+  // if != null add event listener
   var input = document.querySelector("input"); // get the input element
   input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
   resizeInput.call(input); // immediately call the function

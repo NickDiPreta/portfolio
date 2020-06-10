@@ -106,11 +106,9 @@ li{
 #portfolio-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .child{
   max-width: 300px;
-  height: auto;
   padding-bottom: 10px;
 }
