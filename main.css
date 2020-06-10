@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 :root {
   --soft-pink: #edc7b7;
@@ -101,4 +102,15 @@ li{
 }
 #homename{
   padding-bottom: 50px;
+}
+#portfolio-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.child{
+  max-width: 300px;
+  height: auto;
+  padding-bottom: 10px;
 }
