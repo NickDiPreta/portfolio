@@ -8,25 +8,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1 class="screen-gameboy-text" id="name">Nick <br />DiPreta</h1>
-    <div id="start" class="blink">
-      Press spacebar to <br />start.<br /><br /><span
-        >Tap here for mobile.</span
+    <div class="home-container">
+      <h1 class="screen-gameboy-text" id="name">Nick <br />DiPreta</h1>
+      <div id="start" class="blink">
+        <p>Press spacebar to</p>
+        <p>start.</p>
+        <p>Tap here for mobile.</p>
+      </div>
+      <form
+        action="https://formspree.io/mzbjrjgq"
+        method="POST"
+        id="#login"
+        class="entry"
       >
-    </div>
-    <form
-      action="https://formspree.io/mzbjrjgq"
-      method="POST"
-      id="#login"
-      class="entry"
-    >
-      <label id="name" for="name">Enter Name</label><br />
+        <label id="name" for="name">Enter Name</label><br />
 
-      <input type="text" id="fname" name="fname" pattern='(?=.*[a-z])(?=.*[A-Z]).{3,}' 
-      title = "8 or more characters with at least 1 uppercase and 1 lowercase letter."  /><br />
-    </form>
-    <p id="logbook">Press return when ready.</p>
-    <p id="my-form-status"></p>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          pattern="(?=.*[a-z])(?=.*[A-Z]).{3,}"
+          title="8 or more characters with at least 1 uppercase and 1 lowercase letter."
+        /><br />
+      </form>
+      <p id="logbook">Press return when ready.</p>
+      <p id="my-form-status"></p>
+    </div>
     <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
