@@ -1,6 +1,5 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 :root {
   --soft-pink: #edc7b7;
@@ -8,13 +7,15 @@
   --warm-violet: #bab2b5;
   --dark-imperial-blue: #123c69;
   --ruby: #ac3b61;
-  --arcade:rgb(241,240,238);
+  --arcade: rgb(241, 240, 238);
 }
-input:focus, textarea:focus, select:focus{
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 html {
-  color: rgb(24,25,28);
+  color: rgb(24, 25, 28);
   height: 100%;
   background: var(--arcade);
   display: flex;
@@ -29,20 +30,20 @@ h1 {
   text-align: center;
   line-height: 1em;
 }
-.home-container{
-  display:flex;
+.home-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   height: 90vh;
 }
-#start{
+#start {
   text-align: center;
 }
 p {
   text-align: center;
   font-family: "Press Start 2P";
 }
-#logbook{
+#logbook {
   display: none;
 }
 
@@ -51,69 +52,69 @@ p {
   font-family: "Press Start 2P";
   display: none;
 }
-body{
+body {
   height: 100%;
   margin: auto;
 }
 #welcome {
-  padding-top:50vh;
-  height:100vh;
+  padding-top: 50vh;
+  height: 100vh;
   display: none;
 }
-#fname{
+#fname {
   font-size: 20px;
   width: fit-content;
   background-color: transparent;
   color: limegreen;
   line-height: 30px;
   height: 30px;
-  outline:none;
+  outline: none;
   border: none;
-  background-color:black;
-  font-family:"Press Start 2P";
-  margin-top:20px;
-  padding:5px;
+  background-color: black;
+  font-family: "Press Start 2P";
+  margin-top: 20px;
+  padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#logbook{
+#logbook {
   padding-top: 20px;
 }
-nav{
+nav {
   text-align: center;
   padding-top: 42vh;
   height: 100vh;
 }
 
-.divisions{
-  height:100vh;
+.divisions {
+  height: 100vh;
   width: 100vw;
   text-align: center;
   padding-top: 50px;
   margin-bottom: 10px;
-  color: #3232fc;;
+  color: #3232fc;
 }
-a{
+a {
   text-decoration: none;
   color: blue;
   transition: all 500ms ease;
 }
-a:visited{
+a:visited {
   color: blue;
 }
-a:hover{
+a:hover {
   font-size: larger;
 }
-ul{
+ul {
   list-style-type: none;
 }
-li{
+li {
   padding-bottom: 2em;
 }
-#homename{
+#homename {
   padding-bottom: 50px;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-size: 60px;
   font-weight: 700;
   font-style: italic;
@@ -121,90 +122,99 @@ li{
   text-align: center;
   color: #3232fc;
 }
-#portfolio-container{
+#portfolio-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 5px;
+  padding-top: 10vh;
 }
-#portfolio-container > a{
-  display:block;
+#portfolio-container > a {
+  display: block;
   position: relative;
+  text-align: center;
 }
-#portfolio-container > a > p{
-  font-size: 13px;
+#portfolio-container > a > p {
+  font-size: 12px;
   position: absolute;
-  top:50%;
-  transform:translateY(-50%)
-}
-.child{
-  margin:5px;
-  border-radius: 5px;
-  text-decoration: none;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: -1;
 }
 
-.child:hover{
-  border: 2px dashed rgb(255,76,77);
+.child {
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: ease 1s;
+}
+.child:hover {
+  border: 2px dashed rgb(255, 76, 77);
+  left: 20px;
+  transition: ease 1000ms;
+  z-index: -2;
+  opacity: .3;
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
 .caption {
   font-family: sans-serif;
   color: black;
   font-weight: bold;
   display: inline-block;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
-#portfolio{
+#portfolio {
   height: max-content;
-  color:  #3232fc;
+  color: #3232fc;
 }
 
-#about{
+#about {
   height: 100vh;
   width: 80%;
   margin: auto;
 }
-#about-text{
-  font-family: 'VT323', monospace;
+#about-text {
+  font-family: "VT323", monospace;
   display: inline;
   color: black;
   font-size: 5vh;
   text-align: left;
   line-height: 6vh;
 }
-#contact{
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact-form{
+.contact-form {
   color: #3232fc;
   width: 80vw;
 }
 #sprite-image {
   height: 70px;
   width: 34px;
-  background: url("https://i.imgur.com/m1IQFaA.png")
-    0px 0px;
-    float: right;
-    margin-right: 20px;
+  background: url("https://i.imgur.com/m1IQFaA.png") 0px 0px;
+  float: right;
+  margin-right: 20px;
 }
 #sprite-image2 {
   height: 70px;
   width: 34px;
-  background: url("https://i.imgur.com/m1IQFaA.png")
-    0px 74px;
-    float: right;
-    margin-right: 20px;
+  background: url("https://i.imgur.com/m1IQFaA.png") 0px 74px;
+  float: right;
+  margin-right: 20px;
 }
-.hidden-navbar{
+.hidden-navbar {
   display: none;
 }
-#navbar{
+#navbar {
   width: 100vw;
-  border-bottom: 2px solid rgb(41,36,123);
+  border-bottom: 2px solid rgb(41, 36, 123);
   justify-content: center;
   z-index: 100;
 }
@@ -213,22 +223,38 @@ li{
   padding: 20px;
   text-decoration: none;
   font-size: medium;
-  color:  #3232fc;
+  color: #3232fc;
 }
-#navbar a:hover{
-  background-color: darkblue;
+#navbar a:hover {
+  background-color: rgb(255, 76, 77);
 }
 .sticky {
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color:rgb(241,240,238);
+  background-color: rgb(241, 240, 238);
+}
+#send {
+  color: blue;
+  background-color: white;
+  margin-top: 20px;
+  padding:10px;
+  width: 10vw;
+  border-radius: 5px;
+  border:1px solid #edc7b7;
+  -webkit-transition: ease 1s;
 }
 
-@media only screen and (max-width: 450px){
-  #about{
-    width:100%;
+#send:hover{
+  transition: ease 500ms;
+  width: 20vw;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  #about {
+    width: 100%;
   }
 }
 /* Taken from w3 schools styling text areas */
@@ -237,10 +263,24 @@ textarea {
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 1px solid #edc7b7;
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
+}
+label input{
+  border: 1px solid #edc7b7;
+  border-radius: 5px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+  -webkit-transition: ease .3s;
+}
+.logo:hover{
+  filter: contrast(200%);
+  background-color: rgb(255, 76, 77);
+  border-radius: 4px;
 }
 @keyframes screen-gameboy-text {
   0% {
@@ -292,7 +332,7 @@ textarea {
 }
 .screen-gameboy-text {
   position: relative;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-size: 60px;
   font-weight: 700;
   font-style: italic;
@@ -306,10 +346,24 @@ textarea {
   white-space: nowrap;
   z-index: 16;
   color: #3232fc;
-  background: -webkit-linear-gradient(0deg, #3232fc 45%, #85e367 45%, #85e367 50%, #ff52e8 50%, #ff52e8 55%, #ff0151 55%, #ff0151 60%, #f9e52e 60%, #f9e52e 65%, #f0f0f0 65%);
+  background: -webkit-linear-gradient(
+    0deg,
+    #3232fc 45%,
+    #85e367 45%,
+    #85e367 50%,
+    #ff52e8 50%,
+    #ff52e8 55%,
+    #ff0151 55%,
+    #ff0151 60%,
+    #f9e52e 60%,
+    #f9e52e 65%,
+    #f0f0f0 65%
+  );
   background-position: 130px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: screen-gameboy-text 8s linear;
   animation: screen-gameboy-text 8s linear;
 }
+
+

@@ -70,9 +70,7 @@ $(document).ready(function () {
   
     $("#welcome").fadeIn(3000);
     $("#welcome").fadeOut(2000);
-  
+    
 
-
-  
   });
   
