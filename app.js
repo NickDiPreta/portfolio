@@ -66,6 +66,26 @@ $(document).ready(function () {
     $("#fname").focus();
   });
 
+
+  $("#welcome").fadeIn(3000);
+  $("#welcome").fadeOut(2000);
+
+  function blink_text() {
+    $(".blink").fadeOut(1000);
+    $(".blink").fadeIn(1000);
+  }
+  setInterval(blink_text, 2000);
+
+  //create if statement for logic of when to run this
+  // if != null add event listener
+  var input = document.querySelector("input"); // get the input element
+  input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
+  resizeInput.call(input); // immediately call the function
+
+  function resizeInput() {
+    this.style.width = this.value.length + "ch";
+  }
+
   var form = document.getElementById("login");
 
   var status = document.getElementById("my-form-status");
@@ -102,24 +122,5 @@ $(document).ready(function () {
       }
     };
     xhr.send(data);
-  }
-
-  $("#welcome").fadeIn(3000);
-  $("#welcome").fadeOut(2000);
-
-  function blink_text() {
-    $(".blink").fadeOut(1000);
-    $(".blink").fadeIn(1000);
-  }
-  setInterval(blink_text, 2000);
-
-  //create if statement for logic of when to run this
-  // if != null add event listener
-  var input = document.querySelector("input"); // get the input element
-  input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
-  resizeInput.call(input); // immediately call the function
-
-  function resizeInput() {
-    this.style.width = this.value.length + "ch";
   }
 });
