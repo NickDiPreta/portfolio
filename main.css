@@ -1,5 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 :root {
   --soft-pink: #edc7b7;
   --lightest-pink: #eee2dc;
@@ -127,4 +129,29 @@ li{
   font-weight: bold;
   display: inline-block;
   padding-top: .5em;
+}
+
+#portfolio{
+  height: max-content;
+}
+
+#about{
+  height: inherit;
+  background-color: cornflowerblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+#about-text{
+  font-family: 'VT323', monospace;
+  display: inline;
+  color: black;
+  font-size: 5vh;
+  text-align: left;
+  line-height: 6vh;
+}
+.contact-form{
+  background-color: cornflowerblue;
+  width: min-content;
+  margin: auto;
 }

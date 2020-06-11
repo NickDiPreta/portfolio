@@ -76,15 +76,15 @@ $(document).ready(function () {
   }
   setInterval(blink_text, 2000);
 
-  //create if statement for logic of when to run this
-  // if != null add event listener
-  var input = document.querySelector("input"); // get the input element
-  input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
-  resizeInput.call(input); // immediately call the function
+  // //create if statement for logic of when to run this
+  // // if != null add event listener
+  // var input = document.querySelector("input"); // get the input element
+  // input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
+  // resizeInput.call(input); // immediately call the function
 
-  function resizeInput() {
-    this.style.width = this.value.length + "ch";
-  }
+  // function resizeInput() {
+  //   this.style.width = this.value.length + "ch";
+  // }
 
   var form = document.getElementById("login");
 

@@ -21,7 +21,23 @@
     </nav>
     <scroll-container>
       <div class="divisions" id="about">
-        <h2>About</h2>
+        <div>
+          <h2>About</h2>
+          <img
+            src="https://i.imgur.com/IOMLkcZ.jpg"
+            alt="picture of Nick DiPreta"
+          />
+        </div>
+        <p id="about-text">
+          As a lifelong techie and video game enthusiast, I love anything that
+          leverages technology in a creative way. I have experience with a lot
+          of different webapps and softwares; some of which I've used in rather
+          unconventional ways. Right now I use my technical ability as a Growth
+          Specialist at Voro. On a daily basis I'll use a dozen different Amazon
+          EC2 instances, do some keyword research, conduct Data Analysis for
+          user growth, and blog. I'm constantly thinking about ways to reach new
+          people!
+        </p>
       </div>
       <div class="divisions" id="portfolio">
         <h2>Portfolio</h2>
@@ -30,6 +46,22 @@
 
       <div class="divisions" id="contact">
         <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/mbjzyoor" method="POST">
+          <label>
+            Your email:
+            <input type="text" name="_replyto" />
+          </label>
+          <br>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <br>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </scroll-container>
     <p>
