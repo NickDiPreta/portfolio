@@ -138,7 +138,7 @@ li {
 #portfolio-container > a > p {
   font-size: 12px;
   position: absolute;
-  left: 30px;
+  left: 25px;
   top: 50%;
   transform: translateY(-50%);
   opacity: 1;
