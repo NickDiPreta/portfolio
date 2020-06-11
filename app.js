@@ -36,8 +36,8 @@ $(document).ready(function () {
     for (let x in projectsArr) {
       console.log(x);
       $("#portfolio-container").append(`
-        <a href="${projectsArr[x].image}"
-        data-lightbox="image-${x}"> <img class ="child" src="${projectsArr[x].image}" alt = "Project item image"></a>
+        <a href="${projectsArr[x].description}"
+        data-lightbox="image-${x}" data-title= "${projectsArr[x].title}"> <img class ="child" src="${projectsArr[x].image}" alt = "Project item image"> </a>
         `);
     }
   }
