@@ -41,6 +41,36 @@ $(document).ready(function () {
         `);
     }
   }
+  var animationInterval;
+  var spriteSheet = document.getElementById("sprite-image");
+  var widthOfSpriteSheet = 476;
+  var widthOfEachSprite = 34;
+
+  function stopAnimation() {
+    clearInterval(animationInterval);
+  }
+
+  function startAnimation() {
+    var position = widthOfEachSprite; //start position for the image
+    const speed = 700; //in millisecond(ms)
+    const diff = widthOfEachSprite; //difference between two sprites
+
+    animationInterval = setInterval(() => {
+      spriteSheet.style.backgroundPosition = `-${position}px 0px`;
+
+      if (position < widthOfSpriteSheet) {
+        position = position + diff;
+      } else {
+        //increment the position by the width of each sprite each time
+        position = widthOfEachSprite;
+      }
+      //reset the position to show first sprite after the last one
+    }, speed);
+  }
+
+  //Start animation
+  startAnimation();
+  
   console.log("running after ajax");
   const $name = $("#name");
   const $prompt = $("p");
@@ -66,26 +96,42 @@ $(document).ready(function () {
     $("#fname").focus();
   });
 
-
   $("#welcome").fadeIn(3000);
   $("#welcome").fadeOut(2000);
 
+  
+
+
   function blink_text() {
+    let i = 0
+    while (i < 100){
     $(".blink").fadeOut(1000);
     $(".blink").fadeIn(1000);
+    i++;
+    }
   }
-  setInterval(blink_text, 2000);
+  setTimeout(blink_text,7000)
 
-  // //create if statement for logic of when to run this
-  // // if != null add event listener
-  // var input = document.querySelector("input"); // get the input element
-  // input.addEventListener("input", resizeInput); // bind the "resizeInput" callback on "input" event
-  // resizeInput.call(input); // immediately call the function
+  
+  $("#name").classList.add("screen-gameboy-text" );
+window.onscroll = function() {myFunction()};
 
-  // function resizeInput() {
-  //   this.style.width = this.value.length + "ch";
-  // }
+// Get the navbar
+var about = document.getElementById("sticky-start");
 
+// Get the offset position of the navbar
+var sticky = about.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.remove("hidden-navbar");
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+    navbar.classList.add("hidden-navbar")
+  }
+}
   var form = document.getElementById("login");
 
   var status = document.getElementById("my-form-status");
@@ -123,4 +169,5 @@ $(document).ready(function () {
     };
     xhr.send(data);
   }
+
 });

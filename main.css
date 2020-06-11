@@ -8,13 +8,15 @@
   --warm-violet: #bab2b5;
   --dark-imperial-blue: #123c69;
   --ruby: #ac3b61;
+  --arcade:rgb(241,240,238);
 }
 input:focus, textarea:focus, select:focus{
   outline: none;
 }
 html {
+  color: rgb(24,25,28);
   height: 100%;
-  background: var(--lightest-pink);
+  background: var(--arcade);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,18 +81,19 @@ nav{
 
 .divisions{
   height:100vh;
-  width: 90vw;
+  width: 100vw;
   text-align: center;
   padding-top: 50px;
   margin-bottom: 10px;
+  color:rgb(255,76,77);
 }
 a{
   text-decoration: none;
-  color: blue;
+  color: rgb(159,30,49);
   transition: all 500ms ease;
 }
 a:visited{
-  color: blue;
+  color: rgb(255,76,77);
 }
 a:hover{
   font-size: larger;
@@ -119,9 +122,7 @@ li{
 }
 
 .child:hover{
-  border: 4px solid cadetblue;
-  
-  
+  border: 2px dashed rgb(255,76,77);
 }
 .caption {
   font-family: sans-serif;
@@ -133,11 +134,11 @@ li{
 
 #portfolio{
   height: max-content;
+  color: rgb(255,76,77);
 }
 
 #about{
-  height: inherit;
-  background-color: cornflowerblue;
+  height: max-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -150,8 +151,141 @@ li{
   text-align: left;
   line-height: 6vh;
 }
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact-form{
-  background-color: cornflowerblue;
-  width: min-content;
-  margin: auto;
+  color: rgb(255,76,77);
+  width: 80vw;
+}
+#sprite-image {
+  height: 70px;
+  width: 34px;
+  background: url("https://i.imgur.com/m1IQFaA.png")
+    0px 0px;
+    float: right;
+    margin-right: 20px;
+}
+#sprite-image2 {
+  height: 70px;
+  width: 34px;
+  background: url("https://i.imgur.com/m1IQFaA.png")
+    0px 74px;
+    float: right;
+    margin-right: 20px;
+}
+.hidden-navbar{
+  display: none;
+}
+#navbar{
+  width: 100vw;
+  border-bottom: 2px solid rgb(41,36,123);
+}
+#navbar a {
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: medium;
+  color: rgb(255,76,77);
+}
+#navbar a:hover{
+  background-color: darkblue;
+}
+.sticky {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:rgb(241,240,238);
+}
+
+@media only screen and (max-width: 450px){
+  #about{
+    width:100%;
+  }
+}
+/* Taken from w3 schools styling text areas */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+@keyframes screen-gameboy-text {
+  0% {
+    color: #f9e52e;
+    background-position: -120px;
+    opacity: 0;
+  }
+  63.9% {
+    opacity: 0;
+  }
+  64% {
+    color: #f9e52e;
+    background-position: -120px;
+    opacity: 1;
+  }
+  66.5% {
+    color: #f9e52e;
+  }
+  67% {
+    color: #ff0151;
+  }
+  69.5% {
+    color: #ff0151;
+  }
+  70% {
+    color: #ff52e8;
+  }
+  72.5% {
+    color: #ff52e8;
+  }
+  73% {
+    color: #85e367;
+  }
+  75.5% {
+    color: #85e367;
+  }
+  78% {
+    color: #3232fc;
+  }
+  78% {
+    background-position: 130px;
+  }
+  87% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+}
+.screen-gameboy-text {
+  position: relative;
+  font-family: 'Asap', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -2.6px;
+  text-align: center;
+  opacity: 1;
+  width: 520px;
+  -webkit-transform: skew(-5deg);
+  transform: skew(-5deg);
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 16;
+  color: #3232fc;
+  background: -webkit-linear-gradient(0deg, #3232fc 40%, #85e367 40%, #85e367 45%, #ff52e8 45%, #ff52e8 50%, #ff0151 50%, #ff0151 55%, #f9e52e 55%, #f9e52e 60%, #f0f0f0 60%);
+  background-position: 130px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: screen-gameboy-text 8s linear;
+  animation: screen-gameboy-text 8s linear;
 }

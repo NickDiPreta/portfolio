@@ -9,24 +9,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <div class="hidden-navbar"id="navbar">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
     <h1 id="welcome">Welcome</h1>
     <nav>
       <h2 id="homename">Nicholas DiPreta</h2>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li>
+          <a href="#about">About</a>
+        </li>
         <li><a href="#portfolio" id="port-link">Portfolio</a></li>
 
-        <li><a href="#contact">Contact</a></li>
+        <li id="sticky-start"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <scroll-container>
       <div class="divisions" id="about">
+        
         <div>
           <h2>About</h2>
-          <img
-            src="https://i.imgur.com/IOMLkcZ.jpg"
-            alt="picture of Nick DiPreta"
-          />
+          <img src="https://www.mediamatic.net/image/2016/12/13/undefined-571960019.jpg%28mediaclass-full-width.c3083fedae46a95f1139ff9d5833b1b6b8e20a69%29.jpg" style="width: 400px;height:auto;"="">
+        <!-- <div class="sprite-imagge"id="sprite-image"></div>
+        <div class="sprite-image"id="sprite-image2"></div> -->
         </div>
         <p id="about-text">
           As a lifelong techie and video game enthusiast, I love anything that
@@ -46,19 +52,22 @@
 
       <div class="divisions" id="contact">
         <h2>Contact Me</h2>
-        <form class="contact-form" action="https://formspree.io/mbjzyoor" method="POST">
+        <form
+          class="contact-form"
+          action="https://formspree.io/mbjzyoor"
+          method="POST"
+        >
           <label>
             Your email:
+            <br>
             <input type="text" name="_replyto" />
           </label>
-          <br>
+          <br />
           <label>
             Your message:
             <textarea name="message"></textarea>
           </label>
-          <br>
-
-          <!-- your other form fields go here -->
+          <br />
 
           <button type="submit">Send</button>
         </form>
@@ -69,4 +78,5 @@
       <script src="js/lightbox.min.js"></script>
     </p>
   </body>
+  
 </html>
