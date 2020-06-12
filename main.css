@@ -58,7 +58,7 @@ body {
   margin: auto;
 }
 #welcome {
-  padding-top: 50%;
+  margin-top: 50vh;
   height: 100vh;
   display: none;
 }
