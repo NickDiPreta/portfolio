@@ -40,6 +40,7 @@ $(document).ready(function () {
     console.log("#fname".value);
     $("#fname").focus();
   });
+  //blink animation function
   function blink_text() {
     let i = 0;
     while (i < 100) {

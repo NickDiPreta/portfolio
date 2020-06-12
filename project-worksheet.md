@@ -1,5 +1,7 @@
 # Project Overview
 
+[Check out my YouTube Walkthrough!](https://youtu.be/8sMM1rnen7g)
+
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
@@ -87,21 +89,34 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
+
  Lightbox: Was used to create image interactions in portfolio section.
+ jQuery: Used to manipulate dom elements and import google sheet.
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+  blink animation function
+  this allows my text to "blink" up to 100 times!
+  function blink_text() {
+    let i = 0;
+    while (i < 100) {
+      $(".blink").fadeOut(1000);
+      $(".blink").fadeIn(1000);
+      i++;
+    }
+  }
+  setTimeout(blink_text, 4000);
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+**ERROR**: Failed to load resource: the server responded with a status of 404 ()
+**RESOLUTION**: Fill all fields in the google sheet so all inputs are populated.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**BUG**: Some compatibility issue with the different pages of my website's JS. 
+**RESOLUTION**: Split the JS of each page into different JS files.
+
+**FORMAT**: There is no background opacity attribute in css.
+**RESOLUTION**: Manually adjusted opacity of uploaded images.
