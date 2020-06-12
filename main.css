@@ -58,7 +58,7 @@ body {
   margin: auto;
 }
 #welcome {
-  padding-top: 50vh;
+  padding-top: 50%;
   height: 100vh;
   display: none;
 }
@@ -114,7 +114,6 @@ li {
   padding-bottom: 2em;
 }
 #homename {
-  padding-bottom: 50px;
   font-family: "Asap", sans-serif;
   font-size: 60px;
   font-weight: 700;
@@ -128,8 +127,8 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  padding-top: 10vh;
+  max-width: 800px;
+  margin: 4rem auto;
 }
 #portfolio-container > a {
   display: block;
@@ -137,13 +136,17 @@ li {
   text-align: center;
   width: fit-content;
 }
-
+#contact-title{
+  padding-top: 5vh;
+}
 #codepen {
   height: 30px;
 }
 #social-icons {
   display: flex;
-  width: 20vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 30vw;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -190,9 +193,17 @@ li {
 
 #portfolio {
   background: url(leaf.png) no-repeat center center fixed;
-  height: max-content;
+  height: 100vh;
   color: #3232fc;
   z-index: -100;
+}
+@media only screen and (max-width: 700px){
+  #portfolio{
+    height: max-content;
+  }
+}
+#portfolio-title{
+  padding-top: 5vh;
 }
 #portfolio-container > a {
   z-index: 1;
@@ -211,6 +222,9 @@ li {
   width: 80%;
   margin: auto;
 }
+#about-title{
+  padding-top: 5vh;
+}
 #about-text {
   font-family: "VT323", monospace;
   display: inline;
@@ -218,12 +232,14 @@ li {
   font-size: 1.5em;
   text-align: left;
   line-height: 1.5em;
+  display: block;
+  max-width: 800px;
+  margin: 4rem auto;
 }
 #contact {
   background: url(tree.png) no-repeat center center fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 #contact::after {
@@ -231,22 +247,9 @@ li {
 }
 .contact-form {
   color: #3232fc;
-  width: 80vw;
+  max-width: 800px;
 }
-#sprite-image {
-  height: 70px;
-  width: 34px;
-  background: url("https://i.imgur.com/m1IQFaA.png") 0px 0px;
-  float: right;
-  margin-right: 20px;
-}
-#sprite-image2 {
-  height: 70px;
-  width: 34px;
-  background: url("https://i.imgur.com/m1IQFaA.png") 0px 74px;
-  float: right;
-  margin-right: 20px;
-}
+
 .hidden-navbar {
   position: fixed;
   height: 4vh;
@@ -327,6 +330,17 @@ label input {
   background-color: rgba(0, 0, 255, 0.2);
   border-radius: 4px;
   padding: 5px;
+}
+@media only screen and (max-width: 400px){
+  #navbar a{
+    font-size: small;
+  }
+  #about{
+    width: 80vw;
+  }
+  #send{
+    width:20vw;
+  }
 }
 @keyframes screen-gameboy-text {
   0% {
