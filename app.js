@@ -13,18 +13,15 @@ $(document).ready(function () {
     "https://spreadsheets.google.com/feeds/list/1IW-g-YoQ4bCoRtFq6qnDhaMBbY8Xdk_HB7TH4a4twI8/od6/public/values?alt=json";
 
   // .AJAX RETURNS a PROMISE. A promise is resolved using .then
-  
+
   const $name = $("#name");
   const $prompt = $("p");
   const $entry = $(".entry");
   const $start = $("#start");
 
-
-
   $("#welcome").fadeIn(3000);
   $("#welcome").fadeOut(2000);
 
-  
   $(window).keypress(function (e) {
     if (e.which == 32) {
       $start.remove();
@@ -44,19 +41,18 @@ $(document).ready(function () {
     $("#fname").focus();
   });
   function blink_text() {
-    let i = 0
-    while (i < 100){
-    $(".blink").fadeOut(1000);
-    $(".blink").fadeIn(1000);
-    i++;
+    let i = 0;
+    while (i < 100) {
+      $(".blink").fadeOut(1000);
+      $(".blink").fadeIn(1000);
+      i++;
     }
   }
-  setTimeout(blink_text,4000)
+  setTimeout(blink_text, 4000);
 
-  
-  $("#name").classList.add("screen-gameboy-text" );
+  $("#name").classList.add("screen-gameboy-text");
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 
   var form = document.getElementById("login");
 
@@ -95,5 +91,4 @@ $(document).ready(function () {
     };
     xhr.send(data);
   }
-
 });
