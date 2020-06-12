@@ -61,10 +61,13 @@ Nick DiPreta Timeline
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
+| Project Hover | L | 3hr | -hr | -2hr|
 | Make own logo | L | 4hr | -hr | -1hr|
-| Landing page minigame animation | L | 5hr | -hr | -abandoned|
-| Use user name to say "Welcome User" before loading home page | L | 2hr | -hr | -not done|
+| Sticky Nav | H | 2hrs | -hr | 2hrs|
+| Background Images | H | 2hrs | -hr | 2hrs|
+| Style Tweaks | H | 2hrs | -hr | 5hrs|
+| Landing page minigame animation | L | 5hr | -hr | -hr|
+| Use user name to say "Welcome User" before loading home page | L | 2hr | -hr | -hr|
 | Total | H | 18hrs| -hrs | -12hrs |
 
 ## Additional Libraries
