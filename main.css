@@ -23,6 +23,7 @@ html {
   align-items: center;
   font-family: "Press Start 2P";
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -176,6 +177,9 @@ li {
   text-decoration: none;
   -webkit-transition: ease 1s;
 }
+#maple{
+  /* background: url(leaf.png) no-repeat center center fixed; */
+}
 .child:hover {
   border: 2px dashed rgb(255, 76, 77);
   left: 20px;
@@ -193,6 +197,7 @@ li {
 }
 
 #portfolio {
+  background: url(leaf.png) no-repeat center center fixed;
   height: max-content;
   color: #3232fc;
 }
@@ -211,10 +216,15 @@ li {
   line-height: 1.5em;
 }
 #contact {
+  background: url(tree.png) no-repeat center center fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#contact::after{
+  
+  opacity: .6;
 }
 .contact-form {
   color: #3232fc;
