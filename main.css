@@ -134,6 +134,7 @@ li {
   display: block;
   position: relative;
   text-align: center;
+  width: fit-content;
 }
 #portfolio-container > a > p {
   font-size: 12px;
@@ -144,7 +145,31 @@ li {
   opacity: 1;
   z-index: -1;
 }
-
+#codepen{
+  height: 30px;
+}
+#social-icons{
+  display: flex;
+  width:20vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#linked{
+  height:30px;
+}
+#me-images{
+  display: flex;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+  width:60%;
+  max-height: 300px;
+  opacity: 0.1;
+}
+#me-images img{
+  width:100%;
+  height:100%;
+}
 .child {
   margin: 5px;
   border-radius: 5px;
@@ -181,9 +206,9 @@ li {
   font-family: "VT323", monospace;
   display: inline;
   color: black;
-  font-size: 5vh;
+  font-size: 1.5em;
   text-align: left;
-  line-height: 6vh;
+  line-height: 1.5em;
 }
 #contact {
   display: flex;
@@ -210,23 +235,30 @@ li {
   margin-right: 20px;
 }
 .hidden-navbar {
-  display: none;
+  position: fixed;
+  height: 4vh;
+  bottom: 0vh;
+  text-align:   center;
+  background-color: white;
+  padding-top: 2vh;
 }
 #navbar {
   width: 100vw;
-  border-bottom: 2px solid rgb(41, 36, 123);
   justify-content: center;
   z-index: 100;
+  text-align:   center;
+  background-color: white;
+  padding-top: 2vh;
 }
 #navbar a {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   font-size: medium;
   color: #3232fc;
 }
 #navbar a:hover {
-  background-color: rgb(255, 76, 77);
+  font-size: larger;
 }
 .sticky {
   display: flex;
@@ -279,8 +311,9 @@ label input{
 }
 .logo:hover{
   filter: contrast(200%);
-  background-color: rgb(255, 76, 77);
+  background-color: rgba(0,0,255,0.2);
   border-radius: 4px;
+  padding:5px;
 }
 @keyframes screen-gameboy-text {
   0% {
