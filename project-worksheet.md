@@ -66,30 +66,28 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Regular Nav | H | 2hrs | -hr | -hr|
-| Home Page | H | 1hrs | -hr | -hr|
-| Resume Page | H | 1hrs | -hr | -hr|
-| Contact Page | H | 2hrs | -hr | -hr|
-| Portfolio Projects Page | H | 4hrs | -hr | -hr|
-| Fun Projects Page | M | 2hrs | -hr | -hr|
-| Adding Form | H | 2.5hrs| -hr | -hr |
-| Working with API | H | 3hrs| -hr | -hr |
-| Responsive | H | 3hrs | -hr | -hr|
-| Basic Animations/Transitions | H | 3hrs | -hr | -hr|
-| Total | H | 25.5hrs| -hrs | -hrs |
+| Regular Nav | H | 2hrs | -hr | 2hrs|
+| Home Page | H | 1hrs | -hr | 4hrs|
+| Contact Section | H | 2hrs | -hr | 2hrs|
+| Portfolio Projects Section | H | 4hrs | -hr | 6hrs|
+| Homepage Form | H | 2.5hrs| -hr | -3hrs |
+| Working with API | H | 1hrs| -hr | -1hr |
+| Responsive | H | 3hrs | -hr | -2hrs|
+| Basic Animations/Transitions | H | 3hrs | -hr | 6hrs|
+| Total | H | 18.5hrs| -hrs | 26 hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Project Hover | L | 3hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Landing page minigame animation | L | 5hr | -hr | -hr|
-| Use user name to say "Welcome User" before loading home page | L | 2hr | -hr | -hr|
-| Total | H | 18hrs| -hrs | -hrs |
+| Make own logo | L | 4hr | -hr | -1hr|
+| Landing page minigame animation | L | 5hr | -hr | -abandoned|
+| Use user name to say "Welcome User" before loading home page | L | 2hr | -hr | -not done|
+| Total | H | 18hrs| -hrs | -12hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
+ Lightbox: Was used to create image interactions in portfolio section.
 
 ## Code Snippet
 
